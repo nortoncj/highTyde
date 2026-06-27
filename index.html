@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High Tyde Sushi — Coastal Sushi Pop Up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/HighTide/images/logo.png" />
+    <link rel="stylesheet" href="/HighTide/icons/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== WAVE LOADER ===== -->
+    <div class="loader" id="loader">
+      <svg viewBox="0 0 120 80" class="loader-wave" aria-hidden="true">
+        <path
+          d="M5,55 Q20,20 40,45 T75,40 Q90,35 110,55"
+          fill="none"
+          stroke="var(--gold)"
+          stroke-width="3"
+          stroke-linecap="round"
+        />
+      </svg>
+    </div>
+
+    <!-- ===== NAV ===== -->
+    <nav class="navbar" id="navbar">
+      <a href="#top" class="logo-group">
+        <img src="images/logo.png" alt="High Tyde Sushi" />
+      </a>
+
+      <div class="nav-links">
+        <a href="#menu">
+            <i class="fa-solid fa-bowl-rice nav-ico"></i>
+            <span>Menu</span></a>
+        <a href="#schedule"
+          >
+           <i class="fa-solid fa-calendar-days nav-ico"></i>
+          <span>Hours</span></a
+        >
+        <a href="#schedule"
+          >
+          <i class="fa-solid fa-location-dot nav-ico"></i>
+          <span>Location</span></a
+        >
+        <a href="#gallery"
+          ><i class="fa-solid fa-camera nav-ico"></i>
+          
+          <span>Gallery</span></a
+        >
+        <a href="#story">
+            <i class="fa-solid fa-water nav-ico"></i>
+            <span>About</span></a>
+      </div>
+
+      <div class="nav-actions">
+        <button
+          class="lang-toggle"
+          id="langToggle"
+          aria-label="Change language"
+        >
+          <i class="fa-solid fa-globe nav-ico"></i> <span id="langLabel">EN</span> ▾
+        </button>
+        <button class="btn-order" id="themeToggle">Order Up</button>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ===== MOBILE SHEET ===== -->
+    <div class="mobile-sheet" id="mobileSheet">
+      <a href="#menu"><i class="fa-solid fa-bowl-rice nav-ico"></i> Menu</a>
+      <a href="#schedule"><i class="fa-solid fa-calendar-days nav-ico"></i> Hours</a>
+      <a href="#schedule"><i class="fa-solid fa-location-dot nav-ico"></i> Location</a>
+      <a href="#gallery"><i class="fa-solid fa-camera nav-ico"></i> Gallery</a>
+      <a href="#story"><i class="fa-solid fa-water nav-ico"></i> About</a>
+      <button class="btn-order">Order Up</button>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero" id="top">
+      <div class="hero-split">
+        <div class="hero-half hero-wave" data-parallax></div>
+        <div class="hero-half hero-sunset" data-parallax>
+          <div class="hero-sun"></div>
+        </div>
+      </div>
+      <div class="hero-tint"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Coastal Sushi Pop Up</p>
+        <h1>High Tyde</h1>
+        <div class="hero-divider"><span> <i class="fa-regular fa-anchor"></i></span></div>
+        <p class="hero-tagline">Good Sushi. Good People. High Tides.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn-primary ripple">View The Menu</a>
+          <a href="#schedule" class="btn-secondary ripple">Find Us This Week</a>
+        </div>
+      </div>
+
+      <!-- torn paper edge -->
+      <svg
+        class="torn-edge"
+        viewBox="0 0 1440 60"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M0,40 C120,10 240,55 360,38 C480,22 600,58 720,42 C840,28 960,55 1080,40 C1200,26 1320,52 1440,36 L1440,60 L0,60 Z"
+          fill="var(--cream)"
+        />
+      </svg>
+    </header>
+
+    <!-- ===== VALUE STRIP ===== -->
+    <section class="value-section">
+      <div class="value-inner">
+        <div class="value-item reveal">
+            <i class="fa-solid fa-fish value-ico" style="color: var(--teal)"></i>
+         
+          <h3 style="color: var(--teal)">Fresh Catch</h3>
+          <p>Sourced local.<br />Cut daily.</p>
+        </div>
+        <div class="value-item reveal">
+            <i class="fa-solid fa-pepper-hot value-ico" style="color: var(--spicy)"></i>
+          <h3 style="color: var(--spicy)">Bold Flavor</h3>
+          <p>Big taste, balanced<br />with care.</p>
+        </div>
+        <div class="value-item reveal">
+            <i class="fa-solid fa-utensils value-ico" style="color: var(--ink)"></i>
+          <h3 style="color: var(--ink)">Craft Over Chain</h3>
+          <p>Made by real chefs,<br />not a factory.</p>
+        </div>
+        <div class="value-item reveal">
+            <i class="fa-solid fa-sun value-ico" style="color: var(--gold)"></i>
+          <h3 style="color: var(--gold)">Good Vibes</h3>
+          <p>Sunset energy.<br />Night market feels.</p>
+        </div>
+        <div class="value-item reveal">
+           <i class="fa-solid fa-water value-ico" style="color:var(--teal)"></i>
+          <h3 style="color: var(--teal)">Always Moving</h3>
+          <p>New specials with<br />every tide.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED ROLLS ===== -->
+    <section class="featured" id="menu">
+      <div class="container">
+        <div class="featured-head">
+          <h2>Featured Rolls</h2>
+          <a href="#" class="view-full">View Full Menu →</a>
+        </div>
+
+        <div class="roll-grid">
+          <article class="roll-card reveal">
+            <div
+  class="roll-img"
+  style="background-image: url('https://images.pexels.com/photos/17308470/pexels-photo-17308470.jpeg');"
+>
+              <span class="badge badge-spicy"><i class="fa-solid fa-pepper-hot " style="color: var(--spicy)"></i> Spicy</span>
+            </div>
+            <div class="roll-body">
+              <div class="roll-title">
+                <h3>Tyde Breaker</h3>
+                <span class="price">$16</span>
+              </div>
+              <p>
+                Spicy tuna, crunch, cucumber, scallion, sriracha aioli, sweet
+                soy glaze.
+              </p>
+            </div>
+          </article>
+
+          <article class="roll-card reveal">
+            <div
+  class="roll-img"
+  style="background-image: url('https://images.pexels.com/photos/1199980/pexels-photo-1199980.jpeg');"
+>
+
+              <span class="badge badge-feature"><i class="fa-solid fa-star " style="color: var(--gold)"></i> Feature</span>
+            </div>
+            <div class="roll-body">
+              <div class="roll-title">
+                <h3>Sunset Crunch</h3>
+                <span class="price">$17</span>
+              </div>
+              <p>
+                Shrimp tempura, avocado, crab mix, crunch, spicy mayo, eel
+                sauce.
+              </p>
+            </div>
+          </article>
+
+          <article class="roll-card reveal">
+            <div
+              class="roll-img"
+              style="background-image: url('https://images.pexels.com/photos/17584444/pexels-photo-17584444.jpeg');"
+            >
+              <span class="badge badge-cooked"><i class="fa-solid fa-fire " ></i> Cooked</span>
+            </div>
+            <div class="roll-body">
+              <div class="roll-title">
+                <h3>Love Boat</h3>
+                <span class="price">$15</span>
+              </div>
+              <p>
+                Eel, cucumber, cream cheese, avocado, sweet soy, tempura crunch.
+              </p>
+            </div>
+          </article>
+
+          <article class="roll-card reveal">
+            <div
+              class="roll-img"
+              style="background-image: url('https://images.pexels.com/photos/17308459/pexels-photo-17308459.jpeg');"
+            >
+              <span class="badge badge-fresh"><i class="fa-solid fa-fish " style="color: var(--teal)"></i> Fresh</span>
+            </div>
+            <div class="roll-body">
+              <div class="roll-title">
+                <h3>Hamachi Jalapeño</h3>
+                <span class="price">$16</span>
+              </div>
+              <p>
+                Yellowtail, jalapeño, cilantro, ponzu, scallion, yuzu kosho.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT / STORY ===== -->
+    <section class="story" id="story">
+      <div class="story-img">
+        <div class="lantern">寿司</div>
+      </div>
+      <div class="story-content">
+        <p class="eyebrow eyebrow-dark">About High Tyde</p>
+        <h2>Tides Change.<br />Standards Don't.</h2>
+        <p class="story-body">
+          We're a Tampa Bay pop up bringing serious sushi craft to good people
+          who just want good food. No gimmicks, no shortcuts. Just fresh
+          ingredients and respect for the craft.
+        </p>
+        <a href="#" class="btn-primary ripple">Learn More About Us</a>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="schedule">
+      <div class="footer-grid">
+        <div class="foot-col">
+          <h4> <i class="fa-regular fa-calendar" ></i> Hours</h4>
+          <ul class="hours">
+            <li><span>THU</span> 5PM – 11PM</li>
+            <li><span>FRI</span> 5PM – 12AM</li>
+            <li><span>SAT</span> 12PM – 12AM</li>
+            <li><span>SUN</span> 12PM – 9PM</li>
+          </ul>
+          <a href="#" class="foot-link"><i class="fa-brands fa-instagram"></i> Follow IG for pop up updates</a>
+        </div>
+
+        <div class="foot-col">
+          <h4><i class="fa-regular fa-location"></i> Location</h4>
+          <p>Tampa Bay, FL<br />Pop up locations<br />announced weekly</p>
+          <a href="#" class="foot-link">Get Directions →</a>
+        </div>
+
+        <div class="foot-col">
+          <h4> Connect</h4>
+          <p><i class="fa-brands fa-instagram"></i> hightyde.sushi<br />#hightydesushi</p>
+          <div class="ig-row">
+            <div
+              class="ig-thumb"
+              style="background-image: url("images/sunset.webp")"
+            ></div>
+            <div
+              class="ig-thumb"
+              style="background-image: url("images/highwaves.webp");"
+            ></div>
+            <div
+              class="ig-thumb"
+              style="background-image: url("images/sunset.webp")"
+            ></div>
+          </div>
+        </div>
+
+        <div class="foot-col">
+          <h4>Stay In The Loop</h4>
+          <p>New spots, new rolls,<br />good times.</p>
+          <div class="signup">
+            <input type="email" placeholder="Your email" aria-label="Email" />
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <img src="images/logo.png" alt="High Tyde" />
+        <p>Good Sushi. Good People. High Tides.</p>
+        <p class="copy">© 2026 High Tyde Sushi</p>
+      </div>
+    </footer>
+<script src="/HighTide/icons/js/all.min.js"> </script>
+    <script src="script.js"></script>
+  </body>
+</html>
